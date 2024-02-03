@@ -1,0 +1,29 @@
+﻿@model ASPNetMvcCrud.Models.AddEmployeeViewModel
+@{
+}
+<h1>Add Employee</h1>
+<form method="post" asp-action="Add" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label"> Name</label>
+        @* asp-for property is a label tag helper property as it creates a label for a property 
+        and will display the name of the property we want to display. *@
+        <input type="text" class="form-control" asp-for="Name" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label"> Email Address</label>
+        <input type="text" class="form-control" asp-for="Email" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label"> Salary</label>
+        <input type="number" class="form-control" asp-for="Salary" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label"> DateOfBirth</label>
+        <input type="date" class="form-control" asp-for="DateOfBirth" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label"> Department</label>
+        <input type="text" class="form-control" asp-for="Department" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
